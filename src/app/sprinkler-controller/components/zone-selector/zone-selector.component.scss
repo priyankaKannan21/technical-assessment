@@ -23,6 +23,7 @@
 .zone-selector{
     border: 1px solid black;
     width: 300px;
+    padding: 5px;
 }
 
 .zone-selector-sub{
@@ -30,3 +31,24 @@
     width: 100%;
     gap: 30px;
 }
+
+.zone-radio-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: center;
+}
+
+.zone-header-top{
+    display: flex;
+    margin-left: 100px;
+    gap: 100px;
+}
+
+.zone-header-bottom{
+    display: flex;
+    margin-left: 35px;
+    gap: 100px;
+}
+
+

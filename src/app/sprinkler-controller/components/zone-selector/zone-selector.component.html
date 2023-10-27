@@ -6,7 +6,22 @@
       <mat-checkbox class="check-box"></mat-checkbox>
     </div>
     <div class="zone-selector">
-        
+      <div class="zone-header-top">
+        <div>Back</div>
+        <div>Left</div>
+      </div>
+      <mat-radio-group class="zone-radio-group" [(ngModel)]="selectedZone">
+        <mat-radio-button
+          class="example-radio-button"
+          *ngFor="let zone of zoneSelector"
+          [value]="zone"
+        >
+        </mat-radio-button>
+      </mat-radio-group>
+      <div class="zone-header-bottom">
+        <div>Front</div>
+        <div>Right</div>
+      </div>
     </div>
   </div>
 </div>
