@@ -1,6 +1,11 @@
 <div class="sprinkler-main">
-  <app-zone-selector></app-zone-selector>
-  <app-zone-configuration></app-zone-configuration>
+  <app-zone-selector [isPowerOn]="isChecked" ></app-zone-selector>
+  <app-zone-configuration [isPowerOn]="isChecked"></app-zone-configuration>
   <div></div>
   <div></div>
+</div>
+<div class="power-restart">
+  <mat-slide-toggle [(ngModel)]="isChecked" (toggleChange)="toStartApplication()"
+    >Slide Toggle</mat-slide-toggle
+  >
 </div>
