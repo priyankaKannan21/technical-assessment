@@ -7,6 +7,7 @@ import { SprinklerMainComponent } from './components/sprinkler-main/sprinkler-ma
 import { ZoneSelectorComponent } from './components/zone-selector/zone-selector.component';
 import { ZoneConfigurationComponent } from './components/zone-configuration/zone-configuration.component';
 import { FormsModule } from '@angular/forms';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,13 @@ import { FormsModule } from '@angular/forms';
     ZoneSelectorComponent,
     ZoneConfigurationComponent,
   ],
-  imports: [CommonModule, MatCheckboxModule, MatRadioModule, FormsModule],
+  imports: [
+    CommonModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    FormsModule,
+    MatSliderModule,
+  ],
   exports: [SprinklerMainComponent],
 })
 export class SprinklerControllerModule {}
