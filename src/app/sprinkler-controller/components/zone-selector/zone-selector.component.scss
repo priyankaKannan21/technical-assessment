@@ -1,0 +1,32 @@
+.zone-selector-main{
+    margin: 20px;
+    padding: 10px;
+    height: 150px;
+    width: 70%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header{
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.run-mode-class{
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.zone-selector{
+    border: 1px solid black;
+    width: 300px;
+}
+
+.zone-selector-sub{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}

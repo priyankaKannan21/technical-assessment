@@ -1,4 +1,4 @@
-import { ConfigurationData } from '../models/sprinkler.models';
+import { ConfigurationData } from "../models/sprinkler.models";
 
 export const enum ZONE_SELECTOR {
   FRONT = 'Front',
