@@ -2,6 +2,13 @@ import { ConfigurationData } from '../models/sprinkler.models';
 
 export const ZONE_SELECTOR: string[] = ['Front', 'Back', 'Right', 'Left'];
 
+export const enum ZONE_SELECTOR_VALUE {
+  FRONT = 'Front',
+  BACK = 'Back',
+  RIGHT = 'Right',
+  LEFT = 'Left',
+}
+
 export const FRONT_ZONE_CONFIGURATION: ConfigurationData = {
   zoneSelector: 'Front',
   zoneOrder: 1,

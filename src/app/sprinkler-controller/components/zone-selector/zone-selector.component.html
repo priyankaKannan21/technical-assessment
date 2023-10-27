@@ -1,16 +1,20 @@
-<div class="zone-selector-main" disabled="isEnabled">
+<div class="zone-selector-main">
   <div class="header">Selector</div>
   <div class="zone-selector-sub">
     <div class="run-mode-class">
       <div>Run Mode?</div>
-      <mat-checkbox class="check-box"></mat-checkbox>
+      <mat-checkbox class="check-box" [(ngModel)] ="isChecked" (change)="start()"></mat-checkbox>
     </div>
     <div class="zone-selector">
       <div class="zone-header-top">
         <div>Back</div>
         <div>Left</div>
       </div>
-      <mat-radio-group class="zone-radio-group" [(ngModel)]="selectedZone" (ngModelChange)="onChange(selectedZone)">
+      <mat-radio-group
+        class="zone-radio-group"
+        [(ngModel)]="zoneValue"
+        (ngModelChange)="onChange(zoneValue)"
+      >
         <mat-radio-button
           class="example-radio-button"
           *ngFor="let zone of zoneSelector"
@@ -25,3 +29,5 @@
     </div>
   </div>
 </div>
+
+<div>Time: {{ timeValue }}</div>
