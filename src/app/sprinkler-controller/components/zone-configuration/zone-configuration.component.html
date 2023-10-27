@@ -1,1 +1,32 @@
-<p>zone-configuration works!</p>
+<div class="zone-configuration-main">
+  <div class="main-header">Zone Configuration</div>
+  <div class="zone-configuration-sub">
+    <div class="zone-order">
+      <div class="header">Zone Order</div>
+      <mat-slider class="slider-class" min="1" max="5" step="1">
+        <input matSliderThumb value="1" />
+      </mat-slider>
+      <div class="slider-value">
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+      </div>
+      <div class="slider-value">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+      </div>
+    </div>
+    <div class="time-input">
+      <div class="header">Zone Time</div>
+      <div>
+        <mat-form-field appearance="outline" class="input-class">
+          <input matInput value="0" />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+</div>
+
