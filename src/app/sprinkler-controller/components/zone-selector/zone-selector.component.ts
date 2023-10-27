@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ZONE_SELECTOR } from '../../constants/sprinkler.contants';
 
 @Component({
@@ -9,4 +9,7 @@ import { ZONE_SELECTOR } from '../../constants/sprinkler.contants';
 export class ZoneSelectorComponent {
   zoneSelector: string[] = ZONE_SELECTOR;
   selectedZone: string = 'Front';
+  @Input('isPowerOn') isEnabled: boolean = false;
+  onChange(zoneValue: string) {
+  }
 }
